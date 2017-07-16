@@ -15,8 +15,8 @@ public class ModItems {
 	public static Item FISH_TUNA_COOKED;
 
 	public static void init() {
-		FISH_TUNA_RAW = new ItemFish("fish_tuna_raw");
-		FISH_TUNA_COOKED = new ItemFish("fish_tuna_cooked");
+		FISH_TUNA_RAW = new ItemFish(2, 0.4F, false, "fish_tuna_raw");
+		FISH_TUNA_COOKED = new ItemFish(5, 6.0F, false, "fish_tuna_cooked");
 	}
 	
 	public static void register() {
