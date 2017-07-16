@@ -1,0 +1,16 @@
+[
+{
+  "modid": "erpg",
+  "name": "Eridian RPG",
+  "description": "A rustic-themed vanilla++ mod!",
+  "version": "0.01",
+  "mcversion": "1.10.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Eridiah"],
+  "credits": "SIXSOULS for the ideas, and kkendal for the motivation!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
