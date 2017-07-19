@@ -1,0 +1,7 @@
+{
+    "parent": "block/column_side",
+    "textures": {
+        "end": "erpg:blocks/sugarcane_block_top",
+        "side": "erpg:blocks/sugar_cane_block_side"
+    }
+}

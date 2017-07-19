@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.eridianrpg.client.handler.RecipeHandler;
 import com.eridianrpg.common.CommonProxy;
+import com.eridianrpg.common.blocks.ModBlocks;
 import com.eridianrpg.common.items.ModItems;
 
 @Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.NAME, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
@@ -24,6 +25,8 @@ public class Main {
 	public void preInit(FMLPreInitializationEvent event) {
 		ModItems.init();
 		ModItems.register();
+		ModBlocks.init();
+		ModBlocks.register();
 		
 		proxy.registerRenders();
 	}
