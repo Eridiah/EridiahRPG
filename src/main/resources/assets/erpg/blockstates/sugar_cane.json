@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "axis=y,type=bale": { "model": "erpg:sugar_cane_bale" },
+        "axis=z,type=bale": { "model": "erpg:sugar_cane_bale_side" },
+        "axis=x,type=bale": { "model": "erpg:sugar_cane_bale_side", "y": 90 },
+        "axis=none,type=bale": { "model": "erpg:sugar_cane_bale" },
+        "axis=y,type=block": { "model": "erpg:sugar_cane_block" },
+        "axis=z,type=block": { "model": "erpg:sugar_cane_block_side" },
+        "axis=x,type=block": { "model": "erpg:sugar_cane_block_side", "y": 90 },
+        "axis=none,type=block": { "model": "erpg:sugar_cane_block" }
+    }
+}

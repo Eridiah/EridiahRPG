@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "axis=y": { "model": "erpg:sugar_cane_block" },
-        "axis=z": { "model": "erpg:sugar_cane_block_side" },
-        "axis=x": { "model": "erpg:sugar_cane_block_side", "y": 90 },
-        "axis=none": { "model": "erpg:sugar_cane_block" }
-    }
-}

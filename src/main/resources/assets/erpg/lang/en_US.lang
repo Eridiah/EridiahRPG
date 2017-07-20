@@ -1,6 +1,8 @@
 itemGroup.erpgfood=Eridian RPG Food
+itemGroup.erpgblocks=Eridian RPG Blocks
 
 item.fish_tuna_raw.name=Tuna
 item.fish_tuna_cooked.name=Cooked Tuna
 
-block.sugar_cane_block.name=Sugar Cane Block
+tile.sugar_cane.bale.name=Sugar Cane Bale
+tile.sugar_cane.block.name=Sugar Cane Block

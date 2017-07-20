@@ -2,6 +2,6 @@
     "parent": "block/column_side",
     "textures": {
         "end": "erpg:blocks/sugar_cane_block_top",
-        "side": "erpg:blocks/sugar_cane_block_side"
+        "side": "erpg:blocks/sugar_cane_bale_side"
     }
 }
