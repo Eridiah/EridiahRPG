@@ -6,3 +6,6 @@ item.fish_tuna_cooked.name=Cooked Tuna
 
 tile.sugar_cane.bale.name=Sugar Cane Bale
 tile.sugar_cane.block.name=Sugar Cane Block
+tile.limestone.name=Limestone
+tile.rough_limestone.name=Rough Limestone
+tile.cornerstone.name=Cornerstone

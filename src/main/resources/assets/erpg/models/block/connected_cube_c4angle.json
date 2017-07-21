@@ -1,0 +1,13 @@
+{
+    "__comment": "Model for when four connected sides at an angle.",
+	"parent": "block/cube",
+    "textures": {
+		"particle": "erpg:blocks/connected_cube/connected_cube0C",
+        "down": "erpg:blocks/connected_cube/connected_cube4C",
+		"up": "erpg:blocks/connected_cube/connected_cube4C",
+		"north": "erpg:blocks/connected_cube/connected_cube4C",
+		"south": "erpg:blocks/connected_cube/connected_cube3C_uwd",
+		"west": "erpg:blocks/connected_cube/connected_cube4C",
+		"east": "erpg:blocks/connected_cube/connected_cube3C_ued"
+    }
+}

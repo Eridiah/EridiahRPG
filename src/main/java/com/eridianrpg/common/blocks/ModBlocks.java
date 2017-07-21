@@ -5,6 +5,7 @@ import com.eridianrpg.client.handler.EnumHandler;
 import com.eridianrpg.common.blocks.item.ItemBlockMeta;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -14,19 +15,44 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 	
+	public static Block CORNERSTONE;
+	
+	// Stone Types
+	public static Block LIMESTONE;
+	public static Block ROUGH_LIMESTONE;
+	
 	// Decoration
 	public static Block SUGAR_CANE;
 
 	public static void init() {
+		CORNERSTONE = new BlockConnectedTextures("cornerstone", SoundType.STONE).setResistance(30).setHardness(1.5F);
+		
+		// Stone Types
+		LIMESTONE = new BlockBasicStone("limestone");
+		ROUGH_LIMESTONE = new BlockBasicStone("rough_limestone").setHardness(2.0F);
+		
+		// Decoration
 		SUGAR_CANE = new BlockSugarCane("sugar_cane");
 	}
 	
 	public static void register() {
+		registerBlock(CORNERSTONE);
+		
+		//Regular Blocks
+		registerBlock(LIMESTONE);
+		registerBlock(ROUGH_LIMESTONE);
+		
 		// Metadata Blocks
 		registerBlock(SUGAR_CANE, new ItemBlockMeta(SUGAR_CANE));
 	}
 	
 	public static void registerRenders() {
+		registerRender(CORNERSTONE);
+		
+		// Regular Blocks
+		registerRender(LIMESTONE);
+		registerRender(ROUGH_LIMESTONE);
+		
 		// Metadata Blocks
 		for(int i = 0; i < EnumHandler.SugarcaneType.values().length; i++) {
 			registerRender(SUGAR_CANE, i, "sugar_cane_" + EnumHandler.SugarcaneType.values()[i].getName());
