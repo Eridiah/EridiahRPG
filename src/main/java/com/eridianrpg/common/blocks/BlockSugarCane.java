@@ -63,12 +63,37 @@ public class BlockSugarCane extends BlockRotatedPillar implements IMetaBlockName
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		SugarcaneType type = (SugarcaneType) state.getValue(TYPE);
-		return type.getID();
+		
+        int i = 0;
+        EnumFacing.Axis enumfacing$axis = (EnumFacing.Axis)state.getValue(AXIS);
+
+        if (enumfacing$axis == EnumFacing.Axis.X)
+        {
+            i |= 4;
+        }
+        else if (enumfacing$axis == EnumFacing.Axis.Z)
+        {
+            i |= 8;
+        }
+        
+        int meta = type.getID() + i;
+		return meta;
 	}
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
-		return this.getDefaultState().withProperty(TYPE, SugarcaneType.values()[meta]);
+		EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
+		
+		int i = meta & 12;
+		
+		if (i == 4) {
+		    enumfacing$axis = EnumFacing.Axis.X;
+		}
+		else if (i == 8) {
+		    enumfacing$axis = EnumFacing.Axis.Z;
+		}
+		// SugarcaneType type = SugarcaneType.values()[(int)(meta - i)];
+		return this.getDefaultState().withProperty(TYPE, SugarcaneType.values()[(int)(meta - i)]).withProperty(AXIS, enumfacing$axis);
 	}
 
 	@Override
