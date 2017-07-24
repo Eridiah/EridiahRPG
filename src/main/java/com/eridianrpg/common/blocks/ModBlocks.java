@@ -23,6 +23,7 @@ public class ModBlocks {
 	
 	// Decoration
 	public static Block SUGAR_CANE;
+	public static Block THATCH;
 
 	public static void init() {
 		CORNERSTONE = new BlockConnectedTextures("cornerstone", SoundType.STONE).setResistance(30).setHardness(1.5F);
@@ -33,25 +34,27 @@ public class ModBlocks {
 		
 		// Decoration
 		SUGAR_CANE = new BlockSugarCane("sugar_cane");
+		THATCH = new BlockThatch("thatch");
+		
 	}
 	
 	public static void register() {
-		registerBlock(CORNERSTONE);
-		
 		//Regular Blocks
+		registerBlock(CORNERSTONE);
 		registerBlock(LIMESTONE);
 		registerBlock(ROUGH_LIMESTONE);
+		registerBlock(THATCH);
 		
 		// Metadata Blocks
 		registerBlock(SUGAR_CANE, new ItemBlockMeta(SUGAR_CANE));
 	}
 	
 	public static void registerRenders() {
-		registerRender(CORNERSTONE);
-		
 		// Regular Blocks
+		registerRender(CORNERSTONE);
 		registerRender(LIMESTONE);
 		registerRender(ROUGH_LIMESTONE);
+		registerRender(THATCH);
 		
 		// Metadata Blocks
 		for(int i = 0; i < EnumHandler.SugarcaneType.values().length; i++) {

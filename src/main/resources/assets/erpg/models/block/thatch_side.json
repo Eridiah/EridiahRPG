@@ -1,0 +1,7 @@
+{
+    "parent": "block/column_side",
+    "textures": {
+        "end": "erpg:blocks/thatch_top",
+        "side": "erpg:blocks/thatch_side"
+    }
+}
