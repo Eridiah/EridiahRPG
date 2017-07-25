@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "erpg:blocks/fishscale_cobble"
+    }
+}

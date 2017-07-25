@@ -20,6 +20,7 @@ public class ModBlocks {
 	// Stone Types
 	public static Block LIMESTONE;
 	public static Block ROUGH_LIMESTONE;
+	public static Block FISHSCALE_COBBLE;
 	
 	// Decoration
 	public static Block SUGAR_CANE;
@@ -31,6 +32,7 @@ public class ModBlocks {
 		// Stone Types
 		LIMESTONE = new BlockBasicStone("limestone");
 		ROUGH_LIMESTONE = new BlockBasicStone("rough_limestone").setHardness(2.0F);
+		FISHSCALE_COBBLE = new BlockFishscaleCobble("fishscale_cobble");
 		
 		// Decoration
 		SUGAR_CANE = new BlockSugarCane("sugar_cane");
@@ -44,6 +46,7 @@ public class ModBlocks {
 		registerBlock(LIMESTONE);
 		registerBlock(ROUGH_LIMESTONE);
 		registerBlock(THATCH);
+		registerBlock(FISHSCALE_COBBLE);
 		
 		// Metadata Blocks
 		registerBlock(SUGAR_CANE, new ItemBlockMeta(SUGAR_CANE));
@@ -55,6 +58,7 @@ public class ModBlocks {
 		registerRender(LIMESTONE);
 		registerRender(ROUGH_LIMESTONE);
 		registerRender(THATCH);
+		registerRender(FISHSCALE_COBBLE);
 		
 		// Metadata Blocks
 		for(int i = 0; i < EnumHandler.SugarcaneType.values().length; i++) {
