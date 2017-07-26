@@ -17,6 +17,9 @@ public class ModBlocks {
 	
 	public static Block CORNERSTONE;
 	
+	// Ores
+	public static Block AZUMERITE_ORE;
+	
 	// Stone Types
 	public static Block LIMESTONE;
 	public static Block ROUGH_LIMESTONE;
@@ -28,6 +31,9 @@ public class ModBlocks {
 
 	public static void init() {
 		CORNERSTONE = new BlockConnectedTextures("cornerstone", SoundType.STONE).setResistance(30).setHardness(1.5F);
+		
+		// Ores
+		AZUMERITE_ORE = new BlockAzumeriteOre("azumerite_ore", false);
 		
 		// Stone Types
 		LIMESTONE = new BlockBasicStone("limestone");
@@ -47,6 +53,7 @@ public class ModBlocks {
 		registerBlock(ROUGH_LIMESTONE);
 		registerBlock(THATCH);
 		registerBlock(FISHSCALE_COBBLE);
+		registerBlock(AZUMERITE_ORE);
 		
 		// Metadata Blocks
 		registerBlock(SUGAR_CANE, new ItemBlockMeta(SUGAR_CANE));
@@ -59,6 +66,7 @@ public class ModBlocks {
 		registerRender(ROUGH_LIMESTONE);
 		registerRender(THATCH);
 		registerRender(FISHSCALE_COBBLE);
+		registerRender(AZUMERITE_ORE);
 		
 		// Metadata Blocks
 		for(int i = 0; i < EnumHandler.SugarcaneType.values().length; i++) {
