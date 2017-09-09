@@ -1,0 +1,18 @@
+Ideas
+------------------------------------------------------------
+- Items
+ - Pebbles/Small Stones 
+
+- Blocks
+ - Burnt Logs
+
+- Entities
+ - Goats
+ 
+- Economy
+ - Currency(Gold, Silver, or Copper coins)
+ - GUI Bank
+ 
+- GUI
+ - Bank
+ - Stamina Bar

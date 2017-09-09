@@ -1,8 +1,10 @@
 itemGroup.erpgfood=Eridian RPG Food
 itemGroup.erpgblocks=Eridian RPG Blocks
+itemGroup.erpgitems=Eridian RPG Items
 
 item.fish_tuna_raw.name=Tuna
 item.fish_tuna_cooked.name=Cooked Tuna
+item.azumerite.name=Azumerite
 
 tile.sugar_cane.bale.name=Sugar Cane Bale
 tile.sugar_cane.block.name=Sugar Cane Block
@@ -12,3 +14,4 @@ tile.cornerstone.name=Cornerstone
 tile.thatch.name=Thatch
 tile.fishscale_cobble.name=Fishscale Cobblestone
 tile.azumerite_ore.name=Azumerite Ore
+tile.azumerite_block.name=Block of Azumerite

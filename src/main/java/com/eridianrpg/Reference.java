@@ -4,6 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 import com.eridianrpg.client.creativetabs.TabERPGBlocks;
 import com.eridianrpg.client.creativetabs.TabERPGFood;
+import com.eridianrpg.client.creativetabs.TabERPGItems;
 
 public class Reference {
 
@@ -18,5 +19,6 @@ public class Reference {
 	// Creative Tabs
 	public static final CreativeTabs FOOD_TAB = new TabERPGFood();
 	public static final CreativeTabs BLOCKS_TAB = new TabERPGBlocks();
+	public static final CreativeTabs ITEMS_TAB = new TabERPGItems();
 	
 }
